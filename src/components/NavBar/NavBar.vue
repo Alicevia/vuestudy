@@ -1,30 +1,29 @@
 <template>
   <div class="nav-bar">
-
+   <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-    };
+  data() {
+    return {};
   },
 
   computed: {},
 
-  mounted(){},
+  mounted() {},
 
   methods: {},
 
-  components: {},
-}
-
+  components: {
+  }
+};
 </script>
 <style lang='stylus' scoped>
-  .nav-bar
-    width 100%
-    height 49px
-    background pink
+.nav-bar
+  display flex
+ 
+
 
 </style>
