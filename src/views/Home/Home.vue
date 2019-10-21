@@ -11,13 +11,6 @@ export default {
     };
   },
 
-  computed: {},
-
-  mounted(){},
-
-  methods: {},
-
-  components: {},
 }
 
 </script>

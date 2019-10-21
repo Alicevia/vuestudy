@@ -9,19 +9,19 @@ export default new VueRouter({
   routes: [
     {
       path: '/home',
-      component: import('@/views/Home/Home')
+      component: () => import('@/views/Home/Home')
     },
     {
       path: '/category',
-      component: import('@/views/Home/Home')
+      component: () => import('@/views/Category/Category.vue')
     },
     {
       path: '/shopcart',
-      component: import('@/views/Home/Home')
+      component: () => import('@/views/ShopCart/ShopCart.vue')
     },
     {
       path: '/profile',
-      component: import('@/views/Home/Home')
+      component: () => import('@/views/Profile/Profile.vue')
     }
 
   ]

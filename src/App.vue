@@ -7,6 +7,9 @@
 <script>
 import MainNavBar from "@/components/MainNavBar/MainNavBar";
 export default {
+  data(){
+    return {}
+  },
   components: {
     MainNavBar
   }

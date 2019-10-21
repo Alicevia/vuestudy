@@ -16,8 +16,8 @@ export default {
 
   methods: {},
 
-  components: {
-  }
+  // components: {
+  // }
 };
 </script>
 <style lang='stylus' scoped>

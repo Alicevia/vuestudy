@@ -1,28 +1,41 @@
 <template>
-  <div class="nav-bar-item">
-    
-    <slot name="icon"></slot>
-    <slot name="active-icon"></slot>
-    <slot name="title"></slot>
+  <div class="nav-bar-item" @click="changeRouter">
+    <div class="icon">
+      <slot name="icon"></slot>
+    </div>
+    <div class="active-icon">
+      <slot name="active-icon"></slot>
+    </div>
+    <div class="nav-bar-title">
+      <slot name="title"></slot>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-    };
+  props:{
+    path:{
+      type:String
+    }
+  },
+  data() {
+    return {};
   },
 
   computed: {},
 
-  mounted(){},
+  mounted() {},
 
-  methods: {},
+  methods: {
+    changeRouter(){
+      console.log(this.path)
+      this.$router.push(this.path)
+    }
+  },
 
-  components: {},
-}
-
+  components: {}
+};
 </script>
 <style lang='stylus' scoped>
 .nav-bar-item
@@ -30,5 +43,4 @@ export default {
   text-align center
   box-sizing border-box
   padding-top 6px
-
 </style>

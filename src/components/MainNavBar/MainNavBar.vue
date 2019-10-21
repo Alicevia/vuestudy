@@ -1,21 +1,20 @@
 <template>
   <div class="main-nav-bar">
     <NavBar>
-      <NavBarItem>
+      <NavBarItem path='/home'>
         <span class="iconfont icon-homepage" slot="icon"></span>
         <div slot="title">首页</div>
       </NavBarItem>
-      <NavBarItem>
+      <NavBarItem path='/category'>
         <span class="iconfont icon-order" slot="icon"></span>
         <div slot="title">分类</div>
       </NavBarItem>
-
-      <NavBarItem>
+      <NavBarItem  path='/shopcart'>
         <span class="iconfont icon-gouwuchexiantiao" slot="icon"></span>
 
         <div slot="title">购物车</div>
       </NavBarItem>
-      <NavBarItem>
+      <NavBarItem  path='/profile'>
         <span class="iconfont icon-personalcenter" slot="icon"></span>
         <div slot="title">我的</div>
       </NavBarItem>
