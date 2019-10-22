@@ -8,6 +8,10 @@ export default new VueRouter({
   linkActiveClass: 'active',
   routes: [
     {
+      path:'',
+      redirect:'/home'
+    },
+    {
       path: '/home',
       component: () => import('@/views/Home/Home')
     },
@@ -22,6 +26,10 @@ export default new VueRouter({
     {
       path: '/profile',
       component: () => import('@/views/Profile/Profile.vue')
+    },
+    {
+      path:'*',
+      redirect:'/home'
     }
 
   ]

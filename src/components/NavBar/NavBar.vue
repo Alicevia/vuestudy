@@ -22,8 +22,10 @@ export default {
 </script>
 <style lang='stylus' scoped>
 .nav-bar
+  width 100%
+  height 100%
   display flex
- 
+
 
 
 </style>
